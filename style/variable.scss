@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+// primary color
+$primary-color: #2500f9;
+$light-primary-color: #2563ff;
+
+// secondary color
+$secondary-color: #f55767;
+$light-secondary-color: #ffecef;
+$lighter-secondary-color: #fdeee4;
+
+// third color
+$third-color: #40975f;
+$light-third-color: #e4ffee;
+
+// grey color
+$grey-color: #f5f7fa;
+$light-grey-color: #f4f4ff;
+$lighter-grey-color: #eff3f8;
+$dark-grey-color: #e2eaed;
+
+// yellow-color
+$yellow-color: #ffcc00;
+$light-yellow-color: #fff6d3;
+
+// title and text color
+$title-color: #242f51;
+$text-color: #616368;
+
+// font main
+$font-main: "Poppins", sans-serif;
+
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
